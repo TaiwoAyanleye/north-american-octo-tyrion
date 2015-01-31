@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby '2.2.0'
 
 gem 'rails', '4.1.6'
 gem 'bootstrap-sass', '2.0.0'
@@ -32,6 +33,10 @@ group :test, :development do
 end
 
 group :test do
+	# gem "minitest"
+	# gem 'rubysl-test-unit'
+	gem 'test-unit'
+	gem 'selenium-webdriver', '~> 2.35.1'
 	gem 'capybara', '1.1.2'
 	gem 'factory_girl_rails'
 	gem 'cucumber-rails', '1.2.1', require: false
